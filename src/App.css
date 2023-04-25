@@ -83,3 +83,10 @@ a:hover {
   width: 1200px;
   margin:0 auto;
 }
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+

@@ -1,5 +1,13 @@
 import src from "*.jpg";
 
+
+ type WorksType ={
+   id: number
+   name: string
+   link:string
+   decription: string
+   image: string
+ }
 type SkillType = {
   id:number
   name: string
@@ -10,13 +18,11 @@ type SkillType = {
 
 export type StoreType= {
   skillsSection:Array<SkillType>
+  worksSection:Array<WorksType>
 }
 
-
-
-
    export const store:StoreType = {
-      skillsSection: [
+   skillsSection: [
         {
           id: 1,
           name: "HTML",
@@ -77,7 +83,65 @@ export type StoreType= {
           decription: "Working with design layouts, creating layouts and components, working with indents and colors",
           image: "/skills/jest.png"
         }
-      ]
+      ],
+     worksSection: [
+       {
+         id: 1,
+         name: "HTML-Paralax",
+         link:'https://w1llow1sp.github.io/ParalaxHtml/',
+         decription: "Beauty simple app with paralax effect",
+         image: '/works/Paralax.png'
+       },
+       {
+         id: 2,
+         name: "Photographer",
+         link:'https://w1llow1sp.github.io/react-photographer-multipage-portfolio/',
+         decription: "Photographer portfolio with unusual cursor ",
+         image: '/works/Photo.png'
+       },
+         {
+             id: 3,
+             name: "Recipes",
+             link:'https://w1llow1sp.github.io/react--recipes/',
+             decription: "Simple react app with recipes",
+             image: '/works/Recepts.png'
+         },
+         {
+             id: 4,
+             name: "ShowCase",
+             link:'https://w1llow1sp.github.io/react-showcase/',
+             decription: "Showcase with card inspired by fortnite",
+             image: '/works/ShowCase.png'
+         },
+         {
+             id: 5,
+             name: "Movie",
+             link:'https://w1llow1sp.github.io/React-Movie/',
+             decription: "Find you movie in this react app",
+             image: '/works/Movie.png'
+         },
+         {
+             id: 6,
+             name: "Coast Calculator",
+             link:'https://w1llow1sp.github.io/ReactCostAccounting/',
+             decription: "Calculate you coasts in this app",
+             image: '/works/Costs.png'
+         },
+         {
+             id: 7,
+             name: "Counter",
+             link:'https://w1llow1sp.github.io/IT-INCUBATOR-advanced-counter/',
+             decription: "Just counter in old-console style",
+             image: '/works/Counter.png'
+         },
+         {
+             id: 8,
+             name: "Batman",
+             link:'https://w1llow1sp.github.io/Batman/index.html',
+             decription: "A small site dedicated to the release of a new movie",
+             image: '/works/Batman.png'
+         },
+     ]
     }
 
 

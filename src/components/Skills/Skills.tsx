@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { SkillsCard } from './SkillsCard/SkillCard';
 import {store} from "../../store/data";
-import {inspect} from "util";
+
 import styles from './Skills.module.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -24,14 +24,14 @@ export const Skills = () => {
             partialVisibilityGutter: 20 // this is needed to tell the amount of px that should be visible.
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 464, min: 360 },
             items: 1,
             partialVisibilityGutter: 30 // this is needed to tell the amount of px that should be visible.
         }
     }
 
     return (
-        <section>
+        <section className={styles.skills}>
             <div className={'container'}>
                 <div className={styles.wrap}>
                    <h2 className={styles.header}>Skills</h2>

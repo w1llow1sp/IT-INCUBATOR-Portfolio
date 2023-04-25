@@ -5,6 +5,7 @@ import {Header} from "./components/Header/Header";
 import {About} from "./components/About/About";
 import Background from "./ui-components/Background/Background";
 import {Skills} from "./components/Skills/Skills";
+import {Works} from "./components/Works/Works";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Header/>
           <About/>
               <Skills/>
+              <Works/>
           </Background>
       </main>
     </div>
