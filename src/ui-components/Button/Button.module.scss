@@ -1,0 +1,41 @@
+:root {
+    --yellowBtn:var(--safron);
+    --blueBtn:royalblue;
+    --greenBtn:forestgreen;
+    /**/
+}
+
+.button {
+    border-radius:5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    color:var(--ashGrey);
+    font-size: 16px;
+    font-family: 'VT323', monospace;
+&:hover {
+     transition: all ease-in-out 0.3s;
+  color:var(--ashGrey);
+ }
+&_disabled {
+     background-color:gray;
+     color: v;
+     cursor:not-allowed;
+ }
+&_common{
+     border: 1px solid var(--safron);
+&:hover {
+     background-color: var(--safron);
+ }}
+&_blue{
+     border: 1px solid var(--blueBtn);
+&:hover {
+     background-color: var(--blueBtn);
+ }
+}
+&_green{
+     border: 1px solid var(--greenBtn);
+&:hover {
+     background-color: var(--greenBtn);;
+ }
+}}

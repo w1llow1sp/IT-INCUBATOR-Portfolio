@@ -1,11 +1,11 @@
-
-
-.wrap {
+.resume {
     background-color: var(--jet);
     border-radius: 2rem;
     padding: 2rem;
-
+    display: flex;
+    flex-direction: column;
 }
+
 .header {
     padding-bottom: 3rem;
     color: var(--ashGrey);
@@ -17,3 +17,11 @@
     transition: 1s ease-in-out all;
 }
 
+.button {
+    padding: 1.5rem;
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    border: 1px solid var(--safron);
+    border-radius: 0.5rem;
+
+}

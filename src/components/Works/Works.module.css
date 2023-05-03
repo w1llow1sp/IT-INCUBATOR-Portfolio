@@ -8,3 +8,37 @@
     color: var(--safron);
     transition: 1s ease-in-out all;
 }
+
+.works {
+    padding: 80px 0;
+    position: relative;
+}
+
+.card {
+    grid-area: card;
+}
+
+.cardsWrapper {
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-template-areas:
+            'card card'
+            'card card'
+            'card card'
+            'card card';
+}
+
+@media screen and (max-width: 767px) {
+    .cardsWrapper {
+        column-count: 1;
+    }
+}
+
+.decr {
+    color: var(--ashGrey);
+    width: 80%;
+    padding-bottom: 2rem;
+    text-align: center;
+}

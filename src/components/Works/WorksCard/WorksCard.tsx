@@ -2,26 +2,29 @@ import React from 'react';
 import styles from './WorkCard.module.css'
 import {Col} from "react-bootstrap";
 
-type WorkCardProps ={
+type WorkCardProps = {
     id: number
     name: string
-    link:string
+    link: string
     decription: string
     image: string
 }
 
- export const WorkCard = (props:WorkCardProps) => {
-    function onClick (){
-        document.location=props.link
-     }
+export const WorkCard = (props: WorkCardProps) => {
     return (
-        <Col size={12} sm={6} md={4}>
-            <img src={props.image} alt={'project image'}/>
-            <div>
-                <h1>{props.name}</h1>
-                <p>{props.decription}</p>
+        <Col xs={12} sm={6} md={6} lg={6} xl={6}>
+            <div className={styles.card}>
+                <h4 className={styles.header}>{props.name}</h4>
+                <div className={styles.projImgbx}>
+                    <button className={styles.button}>
+                        <a href={props.link} target={'_blank'}>
+                            Show</a>
+                    </button>
+                    <img src={props.image} alt={'project image'}/>
+                </div>
+                <p className={styles.decr}>{props.decription}</p>
+
             </div>
-            <button><a href={props.link} target={'_blank'}>Show</a></button>
         </Col>
     );
 };
