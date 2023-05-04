@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IT-INCUBATOR-Portfolio/static/css/main.0a108d4e.css",
-    "main.js": "/IT-INCUBATOR-Portfolio/static/js/main.9e533b45.js",
+    "main.css": "/IT-INCUBATOR-Portfolio/static/css/main.fa8d75bb.css",
+    "main.js": "/IT-INCUBATOR-Portfolio/static/js/main.a19a8687.js",
     "static/js/787.202b8111.chunk.js": "/IT-INCUBATOR-Portfolio/static/js/787.202b8111.chunk.js",
     "static/media/paralax.png": "/IT-INCUBATOR-Portfolio/static/media/paralax.4f8629273ff474d77818.png",
     "static/media/Picsart.png": "/IT-INCUBATOR-Portfolio/static/media/Picsart.728af0bd53590ebd613e.png",
@@ -25,12 +25,12 @@
     "static/media/Vector6.svg": "/IT-INCUBATOR-Portfolio/static/media/Vector6.dfcef2c5b7774851ba69.svg",
     "static/media/Vector8.svg": "/IT-INCUBATOR-Portfolio/static/media/Vector8.3effac6cbf8753dbcfc0.svg",
     "index.html": "/IT-INCUBATOR-Portfolio/index.html",
-    "main.0a108d4e.css.map": "/IT-INCUBATOR-Portfolio/static/css/main.0a108d4e.css.map",
-    "main.9e533b45.js.map": "/IT-INCUBATOR-Portfolio/static/js/main.9e533b45.js.map",
+    "main.fa8d75bb.css.map": "/IT-INCUBATOR-Portfolio/static/css/main.fa8d75bb.css.map",
+    "main.a19a8687.js.map": "/IT-INCUBATOR-Portfolio/static/js/main.a19a8687.js.map",
     "787.202b8111.chunk.js.map": "/IT-INCUBATOR-Portfolio/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a108d4e.css",
-    "static/js/main.9e533b45.js"
+    "static/css/main.fa8d75bb.css",
+    "static/js/main.a19a8687.js"
   ]
 }
