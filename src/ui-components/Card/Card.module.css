@@ -1,0 +1,12 @@
+.card {
+    background: var(--accent);
+   mask-image: url("Vector6.svg");
+   mask-size: cover;
+    max-width: 2000px;
+    max-height: 2000px;
+}
+
+.content {
+    padding: 50px;
+}
+/*для портфолио лучше самая крайняя - 8*/

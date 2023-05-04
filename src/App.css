@@ -1,26 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root{
-  --safron:#E8C547;
-  --jet:#30323D;
-  --davyGrey:#4D5061;
-  --glaucous:#5C80BC;
-  --ashGrey:#CDD1C4;
+:root {
+    --accent: #1985a1;
+    --backgroundColor: #dcdcdd;
+    --articleColor: #c5c3c6;
+    --text-color: #46494c;
 
-  --index: calc(1vw + 1vh);
+
+    --index: calc(1vw + 1vh);
 }
 
+/*4c5c68 46494c c5c3c6 dcdcdd*/
+
+
+[data-theme='dark'] {
+    --accent: #E8C547;
+    --backgroundColor: #30323D;
+    --articleColor: #4D5061;;
+    /*  --glaucous:#5C80BC;*/
+    --text-color: #ffffff;
+
+    --index: calc(1vw + 1vh);
+}
+
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
 }
 
 h1,
@@ -29,9 +40,9 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
 }
 
 p,
@@ -39,61 +50,65 @@ a,
 li,
 button,
 ul {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 button {
-  border: 0;
-  background-color: transparent;
+    border: 0;
+    background-color: transparent;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  color: var(--ashGrey);
-  text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 a:hover {
-  transition: 0.5s ease-in-out all;
-  color:var(--safron);
-  text-decoration:none;
-  cursor:pointer;
+    transition: 0.5s ease-in-out all;
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .App {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: var(--backgroundColor);
 }
 
 .main {
-  width: 100%;
- /* background-color: var(--ashGrey);*/
+    width: 100%;
+    /* background-color: var(--ashGrey);*/
 
 }
 
 .container {
-  max-width: 1200px;
-  margin:0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
 
+.svg-icon {
+    fill: var(--accent);
+}

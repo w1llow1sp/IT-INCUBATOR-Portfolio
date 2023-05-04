@@ -1,0 +1,11 @@
+.card {
+    background: var(--accent);
+   mask-image: url("Vector8.svg");
+   mask-size: cover;
+}
+
+.content {
+    padding: 100px;
+
+}
+/*для портфолио лучше самая крайняя - 8*/

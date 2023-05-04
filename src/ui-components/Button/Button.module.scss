@@ -1,5 +1,5 @@
 :root {
-    --yellowBtn:var(--safron);
+    --yellowBtn:var(--accent);
     --blueBtn:royalblue;
     --greenBtn:forestgreen;
     /**/
@@ -10,12 +10,12 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     background-color: transparent;
-    color:var(--ashGrey);
+    color:var(--text-color);
     font-size: 16px;
     font-family: 'VT323', monospace;
 &:hover {
      transition: all ease-in-out 0.3s;
-  color:var(--ashGrey);
+  color:var(--text-color);
  }
 &_disabled {
      background-color:gray;
@@ -23,9 +23,9 @@
      cursor:not-allowed;
  }
 &_common{
-     border: 1px solid var(--safron);
+     border: 1px solid var(--accent);
 &:hover {
-     background-color: var(--safron);
+     background-color: var(--accent);
  }}
 &_blue{
      border: 1px solid var(--blueBtn);

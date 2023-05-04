@@ -1,9 +1,15 @@
 import React from 'react';
 import styles from './Header.module.css'
 import LOGO from './logo.png'
-import {Switch} from "@mui/material";
+import {Box, IconButton, Switch} from "@mui/material";
 
-export const Header = () => {
+
+type SwitcherType ={
+    themeSwitcher: ()=>void
+}
+
+
+export const Header = (props: SwitcherType) => {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerLogoWrap}>
@@ -28,7 +34,9 @@ export const Header = () => {
                             <a className={styles.navLink} href="">
                                 Contacts
                             </a></li>
-
+                        <li>
+                            <Switch onClick={()=>props.themeSwitcher()}  defaultChecked />
+                        </li>
                     </ul>
                 </nav>
             </div>

@@ -4,12 +4,12 @@
 
 .contactHeader {
     padding-bottom: 3rem;
-    color: var(--ashGrey);
+    color: var(--text-color);
     font-size: 40px;
     text-align: center;
 }
 .contactHeader:hover {
-    color: var(--safron);
+    color: var(--accent);
     transition: 1s ease-in-out all;
 }
 .inputText {
@@ -35,13 +35,13 @@
     grid-area: 2 / 1 / 3 / 3;
 }
 .button{
-    color: var(--davyGrey);
-    background: var(--ashGrey);
+    color: var(--articleColor);
+    background: var(--text-color);
     grid-area: 3 / 1 / 4 / 3;
 }
 .button:hover {
     color: black;
-    background: var(--safron);
+    background: var(--accent);
     transition: 1s ease-in-out all;
 }
 .form {

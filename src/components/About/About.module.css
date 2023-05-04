@@ -20,7 +20,7 @@
     letter-spacing: calc(var(--index)/3);
     font-weight: 300;
 
-    color: var(--ashGrey);
+    color: var(--text-color);
     padding-bottom: 0.5rem;
 }
 
@@ -29,7 +29,7 @@
     letter-spacing: calc(var(--index)/3);
     font-weight: 700;
 
-    color: var(--ashGrey);
+    color: var(--text-color);
 
     padding-bottom: 1rem;
 }
@@ -45,15 +45,16 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 
-    color: var(--ashGrey);
+    color: var(--text-color);
 }
 
 .button {
-    border-color: var(--ashGrey);
+    border-color: var(--text-color);
+    color: var(--text-color);
 }
 
 .button:hover {
-    border-color: var(--safron);
+    border-color: var(--accent);
     transition: 0.5s ease-in-out all;
 }
 

@@ -1,11 +1,11 @@
 .header {
     padding-bottom: 3rem;
-    color: var(--ashGrey);
+    color: var(--text-color);
     font-size: 40px;
     text-align: center;
 }
 .header:hover {
-    color: var(--safron);
+    color: var(--accent);
     transition: 1s ease-in-out all;
 }
 
@@ -20,14 +20,14 @@
 
 .cardsWrapper {
 display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
     gap: 1rem 1rem;
     grid-template-areas:
-            'card card'
-            'card card'
-            'card card'
+            'card card card'
+            'card card card '
             'card card';
+    max-height: 1500px;
 }
 
 @media screen and (max-width: 767px) {
@@ -37,7 +37,7 @@ display: grid;
 }
 
 .decr {
-    color: var(--ashGrey);
+    color: var(--text-color);
     width: 80%;
     padding-bottom: 2rem;
     text-align: center;

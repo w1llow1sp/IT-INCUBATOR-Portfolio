@@ -1,9 +1,10 @@
 import React from 'react';
 import styles  from './ContactForm.module.css'
+import {Card} from "../../ui-components/Card/Card";
 
 export const ContactForm = () => {
     return (
-
+        <Card>
         <section>
             <div className={'container'}>
                 <div className={'section-form'}>
@@ -18,6 +19,7 @@ export const ContactForm = () => {
                 </div>
             </div>
         </section>
+        </Card>
     );
 };
 
