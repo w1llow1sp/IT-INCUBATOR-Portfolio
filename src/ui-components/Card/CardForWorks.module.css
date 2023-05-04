@@ -1,3 +1,14 @@
+@keyframes slide {
+    0% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
 .card {
     background: var(--accent);
    mask-image: url("Vector8.svg");
@@ -6,6 +17,6 @@
 
 .content {
     padding: 100px;
-
+    animation: slide 10s ease-in-out infinite;
 }
 /*для портфолио лучше самая крайняя - 8*/

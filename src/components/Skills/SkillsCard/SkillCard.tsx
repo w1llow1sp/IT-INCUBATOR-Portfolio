@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SkillCard.module.css'
-
+import {motion} from'framer-motion'
 
 type SkillType = {
     id:number
@@ -13,9 +13,13 @@ type SkillType = {
 export const SkillsCard = (props:SkillType) => {
 
     return (
-        <section className={styles.card} key={props.id}>
+        <section
+
+            className={styles.card} key={props.id}>
             <div>
-                <img src={props.img} alt={'any card'} className={styles.img}/>
+                <motion.img
+                    whileHover={{ scale: 1.1 }}
+                    src={props.img} alt={'any card'} className={styles.img}/>
             </div>
             <div>
                 <div className={styles.skill}>{props.name}</div>

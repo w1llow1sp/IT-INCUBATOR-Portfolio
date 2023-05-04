@@ -5,7 +5,7 @@
     text-align: center;
 }
 .header:hover {
-    color: var(--accent);
+    color: var(--backgroundColor);
     transition: 1s ease-in-out all;
 }
 

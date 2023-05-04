@@ -52,6 +52,12 @@
     font-size: calc(var(--index)/1.1);
 }
 
+.description,
+.hello,
+.myName {
+    text-shadow: var(--backgroundColor) 0,3rem 0.3rem 0.7rem;
+}
+
 .blockButton {
     width: 30%;
     display: flex;

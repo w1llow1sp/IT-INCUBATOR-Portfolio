@@ -1,41 +1,29 @@
-:root {
-    --yellowBtn:var(--accent);
-    --blueBtn:royalblue;
-    --greenBtn:forestgreen;
-    /**/
+
+.button{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--backgroundColor);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.button {
-    border-radius:5px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    background-color: transparent;
-    color:var(--text-color);
-    font-size: 16px;
-    font-family: 'VT323', monospace;
-&:hover {
-     transition: all ease-in-out 0.3s;
-  color:var(--text-color);
- }
-&_disabled {
-     background-color:gray;
-     color: v;
-     cursor:not-allowed;
- }
-&_common{
-     border: 1px solid var(--accent);
-&:hover {
-     background-color: var(--accent);
- }}
-&_blue{
-     border: 1px solid var(--blueBtn);
-&:hover {
-     background-color: var(--blueBtn);
- }
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
 }
-&_green{
-     border: 1px solid var(--greenBtn);
-&:hover {
-     background-color: var(--greenBtn);;
- }
-}}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.25em 0.75em;
+  }
+}

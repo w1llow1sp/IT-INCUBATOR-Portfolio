@@ -1,0 +1,66 @@
+.switcher {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 24px;
+}
+
+.switcherCheckbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switcherLabel {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switcherLabel:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.switcherCheckbox:checked + .switcherLabel {
+    background-color: #2196F3;
+}
+
+.switcherCheckbox:checked + .switcherLabel:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.switcherLabel:after {
+    content: "Off";
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 12px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.switcherCheckbox:checked + .switcherLabel:after {
+    content: "On";
+    left: calc(100% - 12px);
+}
