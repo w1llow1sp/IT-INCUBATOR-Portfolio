@@ -16,7 +16,6 @@ import styles from './Skills.module.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-'../../images/skills/'
 
 
 export const Skills = () => {
