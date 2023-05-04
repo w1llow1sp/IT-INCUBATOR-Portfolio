@@ -1,12 +1,22 @@
 import React from 'react';
 import { SkillsCard } from './SkillsCard/SkillCard';
 import HTML from '../../images/skills/html.png'
+import CSS from '../../images/skills/css.png'
+import JS from '../../images/skills/js.png'
+import REACT from '../../images/skills/react.png'
+import NEXT from '../../images/skills/next.png'
+import TS from'../../images/skills/ts.png'
+import POSTMAN from'../../images/skills/postman.png'
+import GIT from'../../images/skills/git.png'
+import FIGMA from '../../images/skills/figma.png'
+import JEST from '../../images/skills/jest.png'
+
 
 import styles from './Skills.module.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
+'../../images/skills/'
 
 
 export const Skills = () => {
@@ -22,57 +32,59 @@ export const Skills = () => {
             id: 2,
             name: "CSS",
             decription: "Knowledge of basic properties and values, the ability to create responsive layouts, work with element positioning, knowledge of the principles of cascade and inheritance, work with CSS preprocessors (for example, SASS), work with Tailwind and Material-UI",
-            image: "/skills/css.png"
+            image: CSS
 
         },
         {
             id: 3,
             name: "JavaScript",
             decription: "Knowledge of basic language concepts, working with DOM and events, using AJAX and JSON, working with ES6 and new language features, knowledge of basic design patterns and principles of SOLID, KISS, DRY, using uuid",
-            image: "/skills/js.png"
+            image: JS
         },
         {
             id: 4,
             name: "React",
             decription: "Knowledge of the component lifecycle, working with props and state, working with JSX, using context and refs, working with Redux and React Router, using framer-motion, knowing Storybook principles, working with styled-components and React-redux",
-            image: "/skills/react.png"
+            image: REACT
         },
         {
             id: 5,
             name: "NextJS",
             decription: "Knowledge of the basics of working with server rendering, static generation, working with API",
-            image: "/skills/next.png"
+            image: NEXT
         },
         {
             id: 6,
             name: "Typescript",
             decription: "Knowledge of the basic concepts of the language, code typing, the use of generics, working with interfaces and data types",
-            image: "/skills/ts.png"
+            image: TS
         },
         {
             id: 7,
             name: "Postman",
             decription: "API testing, working with requests and responses",
-            image: "/skills/postman.png"
+            image: POSTMAN
         },
         {
             id: 8,
             name: "Git и GitHub",
             decription: "Knowledge of the basics of version control, working with branches and commits, working with GitHub and pull requests",
-            image: "/skills/git.png"
+            image: GIT
         },
         {
             id: 9,
             name: "Figma",
             decription: "Работа с дизайн-макетами, создание макетов и компонентов, работа с отступами и цветами",
-            image: "/skills/figma.png"
+            image: FIGMA
         },
         {
             id: 10,
             name: "Unit-test",
             decription: "Working with design layouts, creating layouts and components, working with indents and colors",
-            image: "/skills/jest.png"
+            image: JEST
         }]
+
+
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
