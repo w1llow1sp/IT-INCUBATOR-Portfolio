@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Header} from "./components/Header/Header";
@@ -18,12 +18,19 @@ function App() {
         const newTheme = theme === 'light' ? 'dark' :'light';
         setTheme(newTheme)
     }
+    const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+
+
+
 
     return (
         <div className="App" data-theme={theme}>
             <main className={'main'}>
                 {/*<Background>*/}
-                    <Header themeSwitcher = {switchTheme}/>
+                    <Header   toggleTheme={switchTheme}/>
+                {/*<Header  theme={theme} toggleTheme={toggleTheme}/>*/}
                     <About/>
                     <Skills/>
                     <Works/>

@@ -1,30 +1,42 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import styles from './About.module.css'
-/*import Image from './1.jpg'*/
-/*import Image from './2.png'*/
 import Image from './Picsart.png'
 import {AboutText} from "./AboutText/AboutText";
-import {ArrowRightCircle} from "react-bootstrap-icons";
-import {Button, IconButton} from "@mui/material";
+import { IconButton} from "@mui/material";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import {blueGrey, grey} from "@mui/material/colors";
+import {grey} from "@mui/material/colors";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import {Card} from "../../ui-components/Card/Card";
+import {motion} from 'framer-motion'
+import {Button} from "../../ui-components/Button/Button";
 
 export const About = () => {
     return (
         <Card>
-            <section className={styles.about}>
-                <div className={'container'}>
+            <motion.section
+                initial={{opacity: 0, scale: 0.5}}
+                animate={{opacity: 1, scale: 1}}
+                transition={{duration: 2.5}}
+
+                className={styles.about}>
+                <div
+                    id={'home'}
+                    className={'container'}>
                     <div className={styles.aboutWrapper}>
                         {/*Image block*/}
                         <div className={styles.imageBlock}>
-                            <img className={styles.image} src={Image} alt={'photo'}/>
+                            <motion.img
+                                whileHover={{scale: 1.1}}
+                                className={styles.image}
+                                src={Image} alt={'photo'}/>
                         </div>
                         {/*Block with information*/}
-                        <div className={styles.textBlock}>
+                        <motion.div
+                            initial={{opacity: 0, y: '-50%'}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 2.5}}
+                            className={styles.textBlock}>
                             <h3 className={styles.hello}>Hello I'm</h3>
                             <h2 className={styles.myName}>Mariya Mokeeva</h2>
                             <div className={styles.motionText}>
@@ -55,25 +67,32 @@ export const About = () => {
                             </div>
                             <div className={styles.blockDescr}>
                                 <p className={styles.description}>
-                                    Hello! I'm Maria. Frontend developer from Magnitogorsk, Russia. I'm experienced in UI development using React / Redux /TypeScript.
+                                    Hello! I'm Maria. Frontend developer from Magnitogorsk, Russia. I'm
+                                    experienced in UI development using React / Redux /TypeScript.
                                 </p>
 
                             </div>
                             <div className={styles.blockButton}>
-                                <Button variant={'outlined'}
-                                        className={styles.button}
-                                        startIcon={<ArrowCircleDownIcon fontSize={"small"}/>}
-                                        href={'#'}
-                                        size={"small"}
-                                        sx={{color: grey[100]}}>
-                                    Download CV
+
+                                <Button
+                                    color={'button'}
+                                    callBack={() => {}}>
+                                    Download SV
+                                </Button>
+                                <Button color={'button'}
+                                        callBack={() => {
+                                        }}
+                                        href="https://magnitogorsk.hh.ru/applicant/resumes/view?resume=c2cfc745ff0b9f7ff20039ed1f774974436537">
+                                    Hire Me
                                 </Button>
                             </div>
 
-                        </div>
+                        </motion.div>
+
                     </div>
+
                 </div>
-            </section>
+            </motion.section>
         </Card>
 
     );

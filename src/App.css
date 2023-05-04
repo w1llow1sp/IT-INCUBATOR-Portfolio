@@ -4,24 +4,25 @@
     --backgroundColor: #dcdcdd;
     --articleColor: #c5c3c6;
     --text-color: #46494c;
+    --gradientColor:#536976;
 
-
+    --transition-time:2s;
     --index: calc(1vw + 1vh);
 }
-
-/*4c5c68 46494c c5c3c6 dcdcdd*/
-
 
 [data-theme='dark'] {
     --accent: #E8C547;
     --backgroundColor: #30323D;
     --articleColor: #4D5061;;
-    /*  --glaucous:#5C80BC;*/
+    --brighColor:#5C80BC;
     --text-color: #ffffff;
-
+    --gradientColor:#E7E9BB;
     --index: calc(1vw + 1vh);
 }
 
+body {
+    transition: background-color 2s ease-in-out ;
+}
 
 * {
     margin: 0;
@@ -85,6 +86,7 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
 
 .App {
     font-family: 'Yanone Kaffeesatz', sans-serif;

@@ -75,7 +75,9 @@ export const Works = () => {
 
     return (
         <CardForWorks>
-            <section className={styles.works}>
+            <section
+                id={'works'}
+                className={styles.works}>
                 <div className={'container'}>
                     <h2 className={styles.header}>
                         Works

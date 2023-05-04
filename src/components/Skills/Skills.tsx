@@ -10,7 +10,7 @@ import POSTMAN from'../../images/skills/postman.png'
 import GIT from'../../images/skills/git.png'
 import FIGMA from '../../images/skills/figma.png'
 import JEST from '../../images/skills/jest.png'
-
+import {motion} from "framer-motion";
 
 import styles from './Skills.module.css'
 import Carousel from "react-multi-carousel";
@@ -103,8 +103,14 @@ export const Skills = () => {
     }
 
     return (
-        <section className={styles.skills}>
-            <div className={'container'}>
+        <motion.section
+            initial={{ opacity: 0, y: '100%' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '100%' }}
+            className={styles.skills}>
+            <div
+                className={'container'}
+                id={'skills'}>
                 <div className={styles.wrap}>
                    <h2 className={styles.header}>Skills</h2>
                  <Carousel
@@ -126,6 +132,6 @@ export const Skills = () => {
                    </Carousel>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };

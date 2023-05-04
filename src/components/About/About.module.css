@@ -16,7 +16,7 @@
 }
 
 .hello {
-    font-size: calc(var(--index)/1.5);
+    font-size: calc(var(--index));
     letter-spacing: calc(var(--index)/3);
     font-weight: 300;
 
@@ -48,13 +48,13 @@
     color: var(--text-color);
 }
 
-.button {
-    border-color: var(--text-color);
-    color: var(--text-color);
+.description{
+    font-size: calc(var(--index)/1.1);
 }
 
-.button:hover {
-    border-color: var(--accent);
-    transition: 0.5s ease-in-out all;
+.blockButton {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-

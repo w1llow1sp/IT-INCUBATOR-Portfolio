@@ -18,12 +18,18 @@
     background: transparent;
 
     font-weight: bold;
-    font-size: 20px;
+    font-size: calc(var(--index));
+    letter-spacing: calc(var(--index)/3) ;
 }
 
+.ActiveNavLink:hover,
+.ActiveNavLink{
+    opacity: 1;
+}
 
-
-
+.navLink {
+    opacity: 0.75;
+}
 .headerImg{
     width: 75px;
 }
