@@ -1,10 +1,23 @@
 {
   "files": {
     "main.css": "/IT-INCUBATOR-Portfolio/static/css/main.9a6848e7.css",
-    "main.js": "/IT-INCUBATOR-Portfolio/static/js/main.df96587f.js",
+    "main.js": "/IT-INCUBATOR-Portfolio/static/js/main.52903218.js",
     "static/js/787.202b8111.chunk.js": "/IT-INCUBATOR-Portfolio/static/js/787.202b8111.chunk.js",
+    "static/media/paralax.png": "/IT-INCUBATOR-Portfolio/static/media/paralax.4f8629273ff474d77818.png",
     "static/media/Picsart.png": "/IT-INCUBATOR-Portfolio/static/media/Picsart.728af0bd53590ebd613e.png",
+    "static/media/Batman.png": "/IT-INCUBATOR-Portfolio/static/media/Batman.5ce25e9f5ae717e169eb.png",
+    "static/media/Movie.png": "/IT-INCUBATOR-Portfolio/static/media/Movie.d90ebe71070934d938f3.png",
+    "static/media/ShowCase.png": "/IT-INCUBATOR-Portfolio/static/media/ShowCase.daf09d98286b9a6bb13b.png",
+    "static/media/Photo.png": "/IT-INCUBATOR-Portfolio/static/media/Photo.4b4a8a6369ffc27cee01.png",
+    "static/media/Recepts.png": "/IT-INCUBATOR-Portfolio/static/media/Recepts.e6c845d72d2471233bdd.png",
+    "static/media/Costs.png": "/IT-INCUBATOR-Portfolio/static/media/Costs.2082066b7d262e81f586.png",
     "static/media/logo.png": "/IT-INCUBATOR-Portfolio/static/media/logo.03dec7c01e5c8f9aad42.png",
+    "static/media/jest.png": "/IT-INCUBATOR-Portfolio/static/media/jest.144411391ff436ada3db.png",
+    "static/media/next.png": "/IT-INCUBATOR-Portfolio/static/media/next.bb571d2daaeb30ca13f0.png",
+    "static/media/Counter.png": "/IT-INCUBATOR-Portfolio/static/media/Counter.855d7384b8ae417843a2.png",
+    "static/media/react.png": "/IT-INCUBATOR-Portfolio/static/media/react.8235160ef002df403ebd.png",
+    "static/media/postman.png": "/IT-INCUBATOR-Portfolio/static/media/postman.b1b51fdf4d95d2a1e4e9.png",
+    "static/media/figma.png": "/IT-INCUBATOR-Portfolio/static/media/figma.d76e77ef387e30b5f137.png",
     "static/media/html.png": "/IT-INCUBATOR-Portfolio/static/media/html.555a47ca6e626e428bd4.png",
     "static/media/revicons.eot": "/IT-INCUBATOR-Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/IT-INCUBATOR-Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -13,11 +26,11 @@
     "static/media/Vector8.svg": "/IT-INCUBATOR-Portfolio/static/media/Vector8.3effac6cbf8753dbcfc0.svg",
     "index.html": "/IT-INCUBATOR-Portfolio/index.html",
     "main.9a6848e7.css.map": "/IT-INCUBATOR-Portfolio/static/css/main.9a6848e7.css.map",
-    "main.df96587f.js.map": "/IT-INCUBATOR-Portfolio/static/js/main.df96587f.js.map",
+    "main.52903218.js.map": "/IT-INCUBATOR-Portfolio/static/js/main.52903218.js.map",
     "787.202b8111.chunk.js.map": "/IT-INCUBATOR-Portfolio/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a6848e7.css",
-    "static/js/main.df96587f.js"
+    "static/js/main.52903218.js"
   ]
 }
