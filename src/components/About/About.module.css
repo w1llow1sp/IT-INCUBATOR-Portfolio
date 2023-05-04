@@ -1,43 +1,59 @@
-.about {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    /*background-color: var(--glaucous);*/
-    background: transparent;
-}
 .aboutWrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
 }
 
-.description {
-    padding-top: 2rem;
-    width: 40%;
-    color: white;
-}
-.image {
-    width: 40%;
-    opacity: 90;
-}
-
-.button{
-    cursor: pointer;
-
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
-    letter-spacing: 1px;
+.textBlock {
+    margin-left: 2rem;
     display: flex;
-    align-items: center;
-    font-family: 'VT323', monospace;
+    flex-direction: column;
+    justify-content: center;
 }
-.SVG {
-    font-size: 25px;
-    margin-left: 10px;
-    transition: 0.3s ease-in-out;
-    line-height: 1;
+
+.image {
+    max-width: calc(var(--index)*20);
+    z-index: 10000;
 }
-.button:hover SVG {
-    margin-left: 25px;
+
+.hello {
+    font-size: calc(var(--index)/1.5);
+    letter-spacing: calc(var(--index)/3);
+    font-weight: 300;
+
+    color: var(--ashGrey);
+    padding-bottom: 0.5rem;
 }
+
+.myName {
+    font-size: calc(var(--index)*2);
+    letter-spacing: calc(var(--index)/3);
+    font-weight: 700;
+
+    color: var(--ashGrey);
+
+    padding-bottom: 1rem;
+}
+
+.linkBlock {
+    max-width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blockDescr {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    color: var(--ashGrey);
+}
+
+.button {
+    border-color: var(--ashGrey);
+}
+
+.button:hover {
+    border-color: var(--safron);
+    transition: 0.5s ease-in-out all;
+}
+

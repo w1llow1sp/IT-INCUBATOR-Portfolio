@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Header.module.css'
 import LOGO from './logo.png'
+import {Switch} from "@mui/material";
 
 export const Header = () => {
     return (
-        <div className={styles.headerContainer}>
+        <header className={styles.headerContainer}>
             <div className={styles.headerLogoWrap}>
                 <img className={styles.headerImg} src={LOGO} alt={'logo'}/>
             </div>
@@ -27,10 +28,11 @@ export const Header = () => {
                             <a className={styles.navLink} href="">
                                 Contacts
                             </a></li>
+
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
     );
 };
 
